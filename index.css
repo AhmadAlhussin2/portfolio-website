@@ -309,7 +309,7 @@ nav {
     }
 
     #achievements div img {
-        height: 70px;
+        height: 80px;
     }
 
     #achievements {
@@ -347,13 +347,14 @@ nav {
         width: 95%;
     }
 
+
     #social-media {
         margin-left: 0;
     }
 
     #social-media a {
         margin: 5px;
-        font-size: 20px;
+        font-size: 17px;
         width: 30px;
         height: 30px;
     }
@@ -387,6 +388,7 @@ nav {
 
     header ul {
         margin-right: 0;
+        width: 95%;
     }
 
     header ul li {
@@ -423,11 +425,4 @@ nav {
         padding: 0;
     }
 
-    #contact a {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-    }
 }
-
-@media screen and (max-width: 700px) and (min-height: 800px) {}
