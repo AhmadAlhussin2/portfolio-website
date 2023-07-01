@@ -466,3 +466,15 @@ section {
     }
 
 }
+
+#refresh-btn{
+    background-color: #fff;
+    padding: 0.5rem;
+    border: #039e08 solid 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#refresh-btn:hover{
+    background-color: #039e08;
+    color: #fff;
+}
