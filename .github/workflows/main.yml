@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - master
-
+      
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  
 jobs:
   deploy_pages:
     runs-on: ubuntu-latest
@@ -30,6 +35,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
       
