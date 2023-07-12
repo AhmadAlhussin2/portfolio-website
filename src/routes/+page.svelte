@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
 	import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
-	import { faEnvelope, faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
+	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+	import Rating from '$lib/Rating.svelte';
 	import profile from '$lib/images/profile.jpg';
 	import codejam from '$lib/images/codejam.png';
 	import hackercup from '$lib/images/hackercup.png';
@@ -47,83 +48,35 @@
 			<ul>
 				<li>
 					Competitive programming
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={5} halfStars={0} />
 				</li>
 				<li>
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={4} halfStars={1} />
 					Data structures & algorithms
 				</li>
 				<li>
 					HTML/CSS
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={4} halfStars={1} />
 				</li>
 				<li>
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={5} halfStars={0} />
 					C++/C
 				</li>
 				<li>
 					Java script
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={5} halfStars={0} />
 				</li>
 				<li>
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={4} halfStars={1} />
 					Blockchain
 				</li>
 				<li>
 					Databases
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={4} halfStars={1} />
 				</li>
 				<li>
 					React
-					<i>
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStar} />
-						<Fa icon={faStarHalfStroke} />
-					</i>
+					<Rating fullStars={5} halfStars={0} />
 				</li>
 			</ul>
 		</section>
@@ -325,11 +278,6 @@
 		margin-left: -0.4rem;
 	}
 
-	#skills i {
-		color: #039e08;
-		font-size: 15px;
-	}
-
 	#achievements {
 		height: 100vh;
 		padding-top: 6rem;
@@ -463,10 +411,6 @@
 
 		#skills li {
 			font-size: 0.7rem;
-		}
-
-		#skills i {
-			font-size: 0.5rem;
 		}
 
 		#achievements {

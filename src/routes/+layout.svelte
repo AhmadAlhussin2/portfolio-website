@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Nav from '../lib/nav.svelte';
-	import Footer from '../lib/footer.svelte';
+	import Nav from '$lib/Nav.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 
 <html lang="en">
