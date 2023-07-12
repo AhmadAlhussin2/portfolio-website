@@ -2,13 +2,13 @@
 	import Fa from 'svelte-fa';
 	import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 	import { faEnvelope, faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
-	import profile from "$lib/images/profile.jpg";
-	import codejam from "$lib/images/codejam.png";
-	import hackercup from "$lib/images/hackercup.png";
-	import huawei from "$lib/images/huawei.png";
-	import icpc from "$lib/images/icpc.png";
-	import kickoff from "$lib/images/kickoff.jpg";
-	import kickstart from "$lib/images/kickstart.png";
+	import profile from '$lib/images/profile.jpg';
+	import codejam from '$lib/images/codejam.png';
+	import hackercup from '$lib/images/hackercup.png';
+	import huawei from '$lib/images/huawei.png';
+	import icpc from '$lib/images/icpc.png';
+	import kickoff from '$lib/images/kickoff.jpg';
+	import kickstart from '$lib/images/kickstart.png';
 </script>
 
 <svelte:head>

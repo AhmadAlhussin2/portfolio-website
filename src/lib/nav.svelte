@@ -35,7 +35,12 @@
 			</a>
 		</li>
 		<li>
-			<a href="{base}/#skills" id="skills-button" bind:this={buttons[2]} on:click={() => buttonClick(2)}>
+			<a
+				href="{base}/#skills"
+				id="skills-button"
+				bind:this={buttons[2]}
+				on:click={() => buttonClick(2)}
+			>
 				Skills
 			</a>
 		</li>
@@ -50,7 +55,12 @@
 			</a>
 		</li>
 		<li>
-			<a href="{base}/comic" id="jokes-button" bind:this={buttons[4]} on:click={() => buttonClick(4)}>
+			<a
+				href="{base}/comic"
+				id="jokes-button"
+				bind:this={buttons[4]}
+				on:click={() => buttonClick(4)}
+			>
 				Jokes
 			</a>
 		</li>
