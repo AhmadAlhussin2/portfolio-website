@@ -2,7 +2,7 @@
 	import Fa from 'svelte-fa';
 	import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-	import Rating from '$lib/Rating.svelte';
+	import Rating from './Rating.svelte';
 	import profile from '$lib/images/profile.jpg';
 	import codejam from '$lib/images/codejam.png';
 	import hackercup from '$lib/images/hackercup.png';
