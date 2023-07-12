@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Nav from '../lib/nav.svelte';
+	import Footer from '../lib/footer.svelte';
 </script>
 
 <html lang="en">
@@ -11,7 +12,7 @@
 	<body>
 		<Nav />
 		<slot />
-		<footer>Thanks for visiting my website</footer>
+		<Footer />
 	</body>
 </html>
 
@@ -35,10 +36,5 @@
 		background-attachment: fixed;
 		z-index: 0;
 		scroll-behavior: smooth;
-	}
-	footer {
-		position: sticky;
-		background-color: #ffffff;
-		bottom: 0;
 	}
 </style>

@@ -2,6 +2,13 @@
 	import Fa from 'svelte-fa';
 	import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 	import { faEnvelope, faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
+	import profile from "$lib/images/profile.jpg";
+	import codejam from "$lib/images/codejam.png";
+	import hackercup from "$lib/images/hackercup.png";
+	import huawei from "$lib/images/huawei.png";
+	import icpc from "$lib/images/icpc.png";
+	import kickoff from "$lib/images/kickoff.jpg";
+	import kickstart from "$lib/images/kickstart.png";
 </script>
 
 <svelte:head>
@@ -33,7 +40,7 @@
 				</article>
 			</aside>
 			<aside id="img-container">
-				<img src="/profile.jpg" alt="" />
+				<img src={profile} alt="" />
 			</aside>
 		</section>
 		<section id="skills">
@@ -126,32 +133,32 @@
 			<tl>2022</tl>
 			<tl>2023</tl>
 
-			<tl><img src="/icpc.png" alt="ICPC Competition" /></tl>
+			<tl><img src={icpc} alt="ICPC Competition" /></tl>
 			<tl>Al-baath ICPC/rank 1</tl>
 			<tl>Al-baath ICPC/rank 1<br />Syrian ICPC/rank 2<br />Arab and Africa ICPC/rank 15</tl>
 			<tl>Southern and Volga region ICPC/rank 3<br />Northern Eurasia finals/rank 61</tl>
 
-			<tl><img src="/kickoff.jpg" alt="ACPC KickOff Competition" /></tl>
+			<tl><img src={kickoff} alt="ACPC KickOff Competition" /></tl>
 			<tl>85th</tl>
 			<tl>25th</tl>
 			<tl>49th</tl>
 
-			<tl><img src="/kickstart.png" alt="Google kickstart Competition" /></tl>
+			<tl><img src={kickstart} alt="Google kickstart Competition" /></tl>
 			<tl>Round C: 196th <br /> Round G: 318th </tl>
 			<tl>Round A: 59th<br />Round F: 156th<br />Round G: 97th</tl>
 			<tl>Farewell: 79th</tl>
 
-			<tl><img src="/huawei.png" alt="Husawei Competition" /></tl>
+			<tl><img src={huawei} alt="Husawei Competition" /></tl>
 			<tl>-</tl>
 			<tl>VM placement: 32th</tl>
 			<tl>Buffer-sharing: 309th</tl>
 
-			<tl><img src="/codejam.png" alt="Google codejam Competition" /></tl>
+			<tl><img src={codejam} alt="Google codejam Competition" /></tl>
 			<tl>Round 1: 797th<br />Round 2: 2434th</tl>
 			<tl>Round 1: 995th<br />Round 2: 2219th</tl>
 			<tl>Farewell: 79th</tl>
 
-			<tl><img src="/hackercup.png" alt="Meta hackercup Competition" /></tl>
+			<tl><img src={hackercup} alt="Meta hackercup Competition" /></tl>
 			<tl>-</tl>
 			<tl>-</tl>
 			<tl>Round 2: 755th</tl>

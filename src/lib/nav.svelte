@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let buttons: Array<HTMLAnchorElement> = [];
 	const buttonClick = (id: number): void => {
 		removeClasses();
@@ -18,13 +19,13 @@
 <header>
 	<ul>
 		<li id="logo">
-			<a href="/#main-view" bind:this={buttons[0]} on:click={() => buttonClick(0)}>
+			<a href="{base}/#main-view" bind:this={buttons[0]} on:click={() => buttonClick(0)}>
 				<span style="color: #039e08;">A</span>hmad
 			</a>
 		</li>
 		<li>
 			<a
-				href="/#main-view"
+				href="{base}/#main-view"
 				id="home-button"
 				class="active-nav"
 				bind:this={buttons[1]}
@@ -34,13 +35,13 @@
 			</a>
 		</li>
 		<li>
-			<a href="/#skills" id="skills-button" bind:this={buttons[2]} on:click={() => buttonClick(2)}>
+			<a href="{base}/#skills" id="skills-button" bind:this={buttons[2]} on:click={() => buttonClick(2)}>
 				Skills
 			</a>
 		</li>
 		<li>
 			<a
-				href="/#achievements"
+				href="{base}/#achievements"
 				id="achievements-button"
 				bind:this={buttons[3]}
 				on:click={() => buttonClick(3)}
@@ -49,7 +50,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="/comic" id="jokes-button" bind:this={buttons[4]} on:click={() => buttonClick(4)}>
+			<a href="{base}/comic" id="jokes-button" bind:this={buttons[4]} on:click={() => buttonClick(4)}>
 				Jokes
 			</a>
 		</li>
