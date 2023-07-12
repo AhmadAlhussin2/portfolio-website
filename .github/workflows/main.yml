@@ -24,11 +24,15 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run build
-      - name: linting
+      - name: building project
+        env:
+          BASE_PATH: 'portfolio-website/'
+        run: |
+          npm run build
+          touch build/.nojekyll
+      - name: running linter
         run: npm run lint
-      - name: checking
+      - name: running npm check
         run: npm run check
       - name: Setup Pages
         uses: actions/configure-pages@v3
